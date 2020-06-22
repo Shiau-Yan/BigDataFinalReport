@@ -247,6 +247,7 @@ model.data <- specifyModel(formula=T.index(myStock, p=0.025, k=10) ~ myTTR.data 
 #從上市-到2020-0301為訓練模型
 
 train.data <- as.data.frame(modelData(model.data, data.window=c(start(myStock), as.Date("2020-03-01"))))
+
 #從2020-03-02到現在為測試模型–期間正是美國疫情爆發期
 
 test.data <- as.data.frame(modelData(model.data, data.window=c(as.Date("2020-03-01"), end(myStock))))
