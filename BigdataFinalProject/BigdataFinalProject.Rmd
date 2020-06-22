@@ -1,5 +1,5 @@
 ---
-title: "淺談公司財報與營收對於股價之影響及簡單預測(以APPLE為例)"
+title: "淺談公司財報與營收對於股價之影響及簡單預測"
 output: github_document
 ---
 
@@ -22,7 +22,7 @@ require(rpart) #決策樹
 Url<-"https://www.macromicro.me/collections/21/us-apple" #爬蟲
 ```
 
-## AAPL
+## AAPL (今天的一切以APPLE為例)
 
 ```{r MA,message=FALSE}
 #取得股票
